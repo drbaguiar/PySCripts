@@ -1,19 +1,16 @@
-# http://www.codeskulptor.org/#user39_0wo2w8bdLq_0.py
-# input will come from buttons and an input field
-# all output for the game will be printed in the console
-import simplegui
 import random
 import math
+
+# initialize global variables used in your code here
+num_range = 100
+num_guesses = int(math.ceil(math.log(num_range,2)))
+secret_number = random.randint(0, 100)
 
 # helper function to start and restart the game
 def new_game():
     print "New game. Range is from 0 to",num_range
     print "Number of remaining guesses is",num_guesses
     
-# initialize global variables used in your code here
-num_range = 100
-num_guesses = int(math.ceil(math.log(num_range,2)))
-secret_number = random.randint(0, 100)
 
 # define event handlers for control panel
 def range100():
@@ -59,16 +56,7 @@ def input_guess(guess):
             range100()
         else:
             range1000() 
-        
-# create frame
-f=simplegui.create_frame("Guess the number: ",200,200)
-
-# register event handlers for control elements and start frame
-f.add_button("Range is [0, 100)", range100,200)
-f.add_button("Range is [0, 1000)", range1000,200)
-f.add_input("Enter a guess", input_guess,200)
-
-# call new_game 
+        # call new_game 
 new_game()
 
 # always remember to check your completed program against the grading rubric
