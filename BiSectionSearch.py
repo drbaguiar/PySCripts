@@ -1,4 +1,4 @@
-x = 12345
+x = 25
 epsilon = 0.01
 low = 0.0
 high = x

@@ -80,15 +80,18 @@ def run_example4():
     seq_outcomes = gen_sorted_permutations(outcomes, length)
     print "Computed", len(seq_outcomes), "combinations of", str(length) ,"outcomes"
     print "Sequences were", seq_outcomes
-     
-   
-#outcomes = set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+    
+outcomes = set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+#outcomes = set([1,2,3,4,5,6]
+#outcomes = set(["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"])
 #outcomes = set(["Red", "Green", "Blue"])
+#outcomes = set(["Heads", "Tails"])
 #outcomes = set(["Sunday", "Mondy", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"])
-outcomes = set(["Red", "Green", "Blue","Yellow","Black","White"])
-length = 3
+#outcomes = set(["Red", "Green", "Blue","Yellow","Black","White"])
+#outcomes =set([])
+length = 5
 
-run_example1() #All enurmations
-run_example2() #Ordered enurmations
-run_example3() #Permutations
+#run_example1() #All enurmations
+#run_example2() #Ordered enurmations
+#run_example3() #Permutations
 run_example4() #Combinations
